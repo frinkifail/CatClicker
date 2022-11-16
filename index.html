@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>CatClicker (Dev)</title>
+</head>
+<body>
+	<h3 style="font-weight: normal; text-align: center;"><div id="coinval" class="inl" style="font-weight: bold; color: lime;">0</div> CatCoins -- x<div id="coinmul" class="inl" style="color: red; font-weight: bold;">1.0</div></h3>
+    <div class="centerbutton">
+	    <img id="ccaddbutton" src="https://popcat.click/img/p.1e9d00be.png" width="390px" height="490px"></img>
+    </div>
+    <button class="generators-buttons canPurchase">
+        Untrained Cat (<span id="UntrainedCat-Amount">0</span>)<br>
+        does stuff<br>
+        cost: <span id="UntrainedCat-Cost">placeholder</span>
+    </button>
+
+    <br><br>
+    <button id="statistics">Statistics</button>
+    <div id="statsdiv" style="display: none;">
+        <ul>
+            <li>Total Clicks: <span id=clickedamount>0</span></li>
+        </ul>
+    </div><br>
+    <button id="savebutton">Save (In-Dev)</button>
+	<footer>cat clicker dev 1.4.3</footer>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/BrowserFS/2.0.0/browserfs.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"></script>
+<script>
+    fetch('./save_test.json')
+        .then((response) => response.json())
+        .then((json) => ccsave = json);
+</script>
+<script src="main.js"></script>
+</html>

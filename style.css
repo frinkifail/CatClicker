@@ -1,0 +1,35 @@
+body {
+	font-family: "Roboto Mono", "Consolas", "Courier New", monospace, monospace;
+    font-size: 16pt;
+	background-color: black;
+	color: snow;
+}
+footer {
+	padding-top: 1024px;
+}
+.inl {
+	display: inline;
+}
+.centerbutton {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.generators-buttons {
+    margin: 0.4rem 0.2rem 0.4rem 0.2rem;
+    font-size: 21px;
+    line-height: 1.75;
+    height: 11rem;
+    width: 20rem;
+    font-family: "Consolas", "Roboto Mono", monospace, monospace;
+    border-width: 0.3rem;
+    color: lightgray;
+    background-color: #333333;
+}
+.canPurchase {
+    border-color: green;
+    transition-duration: 0.5s;
+}
+.cantPurchase {
+	border-color: red;
+}
